@@ -265,7 +265,7 @@ local highlight_groups = {
 	Repeat = { fg = turqoise, style = "italic" },
 	Label = { fg = pink, style = "bold" },
 	Operator = { fg = green, style = "bold" },
-	Keyword = { fg = teal },
+	Keyword = { fg = red },
 	Exception = { fg = red_light, style = "bold" },
 	Noise = "Delimiter",
 
@@ -642,7 +642,7 @@ local highlight_groups = {
 	mkdItalic = "mkdBold",
 	mkdLineBreak = "NonText",
 	mkdListItem = "Special",
-	mkdListItem = "mkdBold",
+	-- mkdListItem = "mkdBold",
 	mkdRule = function(self)
 		return { fg = self.Ignore.fg, style = { "underline", color = self.Delimiter.fg } }
 	end,
