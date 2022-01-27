@@ -639,7 +639,8 @@ local highlight_groups = {
 	-- mkdHeading = "Delimiter",
 	mkdItalic = "mkdBold",
 	mkdLineBreak = "NonText",
-	mkdListItem = "Special",
+	-- mkdListItem = "Special",
+	mkdListItem = "mkdBold",
 	mkdRule = function(self)
 		return { fg = self.Ignore.fg, style = { "underline", color = self.Delimiter.fg } }
 	end,
