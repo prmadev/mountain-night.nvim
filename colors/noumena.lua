@@ -242,7 +242,7 @@ local highlight_group_normal = { fg = gray_light, bg = NONE }
 -- This is where the rest of your highlights should go.
 local highlight_groups = {
 	--[[ 4.1. Text Analysis ]]
-	Comment = { fg = gray, style = "italic" },
+	Comment = { fg = white, style = "italic" },
 	NonText = { fg = gray_darker },
 	EndOfBuffer = "NonText",
 	Whitespace = "NonText",
