@@ -429,7 +429,7 @@ local highlight_groups = {
 	-- Cursor = { style = "inverse" },
 	Cursor = { bg = red },
 	CursorIM = "Cursor",
-	CursorColumn = { bg = gray_dark },
+	CursorColumn = { bg = red },
 
 	--[[ 4.2.13. Misc ]]
 	Directory = { fg = ice, style = "bold" },
