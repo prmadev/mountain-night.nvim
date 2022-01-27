@@ -615,7 +615,7 @@ local highlight_groups = {
 	--[[ 4.3.13. Markdown ]]
 	markdownCode = "mkdCode",
 	markdownCodeDelimiter = "mkdCodeDelimiter",
-	markdownH1 = { fg = green, style = "bold" },
+	markdownH1 = { fg = white, bg = green, style = "bold" },
 	markdownH2 = { fg = orange, style = "bold" },
 	markdownH3 = { fg = blue, style = "bold" },
 	markdownH4 = { fg = yellow, style = "bold" },
