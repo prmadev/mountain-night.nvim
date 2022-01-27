@@ -627,10 +627,11 @@ local highlight_groups = {
 	markdownH5Delimiter = { fg = black, bg = cyan, style = "bold" },
 	markdownH6 = { fg = black, bg = purple, style = "bold" },
 	markdownH6Delimiter = { fg = black, bg = purple, style = "bold" },
+	markdownHeadingDelimiter = { fg = black, bg = purple, style = "bold" },
 	markdownLinkDelimiter = "Delimiter",
 	markdownLinkTextDelimiter = "markdownLinkDelimiter",
 	markdownUrl = "Underlined",
-	-- mkdBold = "Ignore",
+	mkdBold = "Ignore",
 	mkdBoldItalic = "mkdBold",
 	mkdCode = "Keyword",
 	mkdCodeDelimiter = "mkdBold",
@@ -639,7 +640,7 @@ local highlight_groups = {
 	-- mkdHeading = "Delimiter",
 	mkdItalic = "mkdBold",
 	mkdLineBreak = "NonText",
-	-- mkdListItem = "Special",
+	mkdListItem = "Special",
 	mkdListItem = "mkdBold",
 	mkdRule = function(self)
 		return { fg = self.Ignore.fg, style = { "underline", color = self.Delimiter.fg } }
