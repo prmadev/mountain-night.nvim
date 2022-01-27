@@ -427,7 +427,7 @@ local highlight_groups = {
 
 	--[[ 4.2.12. Cursor ]]
 	-- Cursor = { style = "inverse" },
-	Cursor = { bg = "red" },
+	Cursor = { bg = red },
 	CursorIM = "Cursor",
 	CursorColumn = { bg = gray_dark },
 
