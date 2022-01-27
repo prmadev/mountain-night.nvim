@@ -628,6 +628,7 @@ local highlight_groups = {
 	markdownH6 = { fg = black, bg = purple, style = "bold" },
 	markdownH6Delimiter = { fg = black, bg = purple, style = "bold" },
 	markdownHeadingDelimiter = { fg = black, bg = purple, style = "bold" },
+	markdownHeadingRule = { fg = black, bg = purple, style = "bold" },
 	markdownLinkDelimiter = "Delimiter",
 	markdownLinkTextDelimiter = "markdownLinkDelimiter",
 	markdownUrl = "Underlined",
