@@ -426,7 +426,8 @@ local highlight_groups = {
 	LspDiagnosticsUnderlineWarning = "DiagnosticUnderlineWarn",
 
 	--[[ 4.2.12. Cursor ]]
-	Cursor = { style = "inverse" },
+	-- Cursor = { style = "inverse" },
+	Cursor = { bg = "red" },
 	CursorIM = "Cursor",
 	CursorColumn = { bg = gray_dark },
 
