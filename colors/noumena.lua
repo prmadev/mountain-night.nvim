@@ -647,6 +647,7 @@ local highlight_groups = {
 		return { fg = self.Ignore.fg, style = { "underline", color = self.Delimiter.fg } }
 	end,
 
+	TSTitle = { fg = black, bg = purple, style = "bold" },
 	--[[ 4.3.20. Python ]]
 	pythonBrackets = "Delimiter",
 	pythonBuiltinFunc = "Operator",
