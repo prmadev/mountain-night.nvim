@@ -15,7 +15,7 @@
 	You will not need any additional tooling to run this file. Just open it in Neovim and follow the instructions.
 
 	The process is divided in five steps:
-	1. Rename the template,
+	1. Rename the template, [DONE]
 	2. Edit your colorscheme's information,
 	3. Define your colors,
 	4. Define your highlight groups and links, and
@@ -57,7 +57,7 @@
 ]]
 
 -- This is the name of your colorscheme which will be used as per |g:colors_name|.
-vim.g.colors_name = 'highlite'
+vim.g.colors_name = 'noumena'
 
 --[[ Step 3: Colors
 	Next you will define all of the colors that you will use for the color scheme.
@@ -85,40 +85,40 @@ vim.g.colors_name = 'highlite'
 	NOTE: |Replace-mode| will probably be useful here.
 ]]
 
-local black       = {'#202020', 235, 'black'}
-local gray        = {'#808080', 244, 'gray'}
+local black       = {'#151515', 233, 'black'}
+local gray        = {'#353535', 236, 'gray'}
 local gray_dark   = {'#353535', 236, 'darkgrey'}
-local gray_darker = {'#505050', 239, 'gray'}
-local gray_light  = {'#c0c0c0', 250, 'gray'}
-local white       = {'#ffffff', 231, 'white'}
+local gray_darker = {'#353535', 236, 'gray'}
+local gray_light  = {'#353535', 236, 'gray'}
+local white       = {'#e8e3e3', 254, 'white'}
 
-local tan = {'#f4c069', 221, 'yellow'}
+local tan = {'#D9BC8C', 180, 'yellow'}
 
-local red       = {'#ee4a59', 203, 'red'}
-local red_dark  = {'#a80000', 124, 'darkred'}
-local red_light = {'#ff4090', 205, 'red'}
+local red       = {'#B66467', 131, 'red'}
+local red_dark  = {'#B66467', 131, 'darkred'}
+local red_light = {'#B66467', 131, 'red'}
 
-local orange       = {'#ff8900', 208, 'darkyellow'}
-local orange_light = {'#f0af00', 214, 'darkyellow'}
+local orange       = {'#bf8e40', 179, 'darkyellow'}
+local orange_light = {'#bf8e40', 179, 'darkyellow'}
 
-local yellow = {'#f0df33', 227, 'yellow'}
+local yellow = {'#D9BC8C', 180, 'yellow'}
 
-local green_dark  = {'#70d533', 113, 'darkgreen'}
-local green       = {'#22ff22', 46,  'green'}
-local green_light = {'#99ff99', 120, 'green'}
-local turqoise    = {'#2bff99', 48,  'green'}
+local green_dark  = {'#8C977D', 101, 'darkgreen'}
+local green       = {'#8C977D', 101,  'green'}
+local green_light = {'#8C977D', 101, 'green'}
+local turqoise    = {'#8AA6A2', 109,  'green'}
 
-local blue = {'#7766ff', 63,  'darkblue'}
-local cyan = {'#33dbc3', 80,  'cyan'}
-local ice  = {'#95c5ff', 111, 'cyan'}
-local teal = {'#60afff', 75,  'blue'}
+local blue = {'#8DA3B9', 109,  'darkblue'}
+local cyan = {'#8AA6A2', 109,  'cyan'}
+local ice  = {'#8AA6A2', 109, 'cyan'}
+local teal = {'#8DA3B9', 109,  'blue'}
 
-local magenta      = {'#d5508f', 168, 'magenta'}
-local magenta_dark = {'#bb0099', 126, 'darkmagenta'}
-local pink         = {'#ffa6ff', 219, 'magenta'}
-local pink_light   = {'#ffb7b7', 217, 'white'}
-local purple       = {'#cf55f0', 171, 'magenta'}
-local purple_light = {'#af60af', 133, 'darkmagenta'}
+local magenta      = {'#A988B0', 139, 'magenta'}
+local magenta_dark = {'#A988B0', 139, 'darkmagenta'}
+local pink         = {'#A988B0', 139, 'magenta'}
+local pink_light   = {'#A988B0', 139, 'white'}
+local purple       = {'#A988B0', 139, 'magenta'}
+local purple_light = {'#A988B0', 139, 'darkmagenta'}
 
 --[[ Step 4: highlights
 	You can define highlight groups like this:
@@ -600,7 +600,7 @@ local highlight_groups = {
 	--[[ 4.3.13. Markdown ]]
 	markdownCode = 'mkdCode',
 	markdownCodeDelimiter = 'mkdCodeDelimiter',
-	markdownH1 = {fg=red, style='bold'},
+	markdownH1 = {fg=red,  style='bold'},
 	markdownH2 = {fg=orange, style='bold'},
 	markdownH3 = {fg=yellow, style='bold'},
 	markdownH4 = {fg=green_dark, style='bold'},
