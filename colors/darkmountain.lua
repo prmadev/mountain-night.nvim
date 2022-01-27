@@ -56,7 +56,7 @@
 ]]
 
 -- This is the name of your colorscheme which will be used as per |g:colors_name|.
-vim.g.colors_name = "noumena"
+vim.g.colors_name = "darkmountain"
 
 --[[ Step 3: Colors
 	Next you will define all of the colors that you will use for the color scheme.
@@ -84,40 +84,40 @@ vim.g.colors_name = "noumena"
 	NOTE: |Replace-mode| will probably be useful here.
 ]]
 
-local black = { "#151515", 233, "black" }
-local gray = { "#353535", 236, "gray" }
-local gray_dark = { "#353535", 236, "darkgrey" }
-local gray_darker = { "#353535", 236, "gray" }
-local gray_light = { "#353535", 236, "gray" }
-local white = { "#e8e3e3", 254, "white" }
+local black = { "#101216", 233, "black" }
+local gray_light = { "#4b5365", 236, "gray" }
+local gray = { "#313743", 236, "gray" }
+local gray_dark = { "#232730", 236, "darkgrey" }
+local gray_darker = { "#1B1E25", 236, "gray" }
+local white = { "#b4c0d4", 254, "white" }
 
-local tan = { "#D9BC8C", 180, "yellow" }
+local tan = { "#e0ae4a", 180, "yellow" }
 
-local red = { "#B66467", 131, "red" }
-local red_dark = { "#B66467", 131, "darkred" }
-local red_light = { "#B66467", 131, "red" }
+local red = { "#973d46", 131, "red" }
+local red_dark = { "#973d46", 131, "darkred" }
+local red_light = { "#973d46", 131, "red" }
 
-local orange = { "#bf8e40", 179, "darkyellow" }
-local orange_light = { "#bf8e40", 179, "darkyellow" }
+local orange = { "#d39924", 179, "darkyellow" }
+local orange_light = { "#d39924", 179, "darkyellow" }
 
-local yellow = { "#D9BC8C", 180, "yellow" }
+local yellow = { "#e0ae4a", 180, "yellow" }
 
-local green_dark = { "#8C977D", 101, "darkgreen" }
-local green = { "#8C977D", 101, "green" }
-local green_light = { "#8C977D", 101, "green" }
-local turqoise = { "#8AA6A2", 109, "green" }
+local green_dark = { "#7ca25c", 101, "darkgreen" }
+local green = { "#7ca25c", 101, "green" }
+local green_light = { "#7ca25c", 101, "green" }
+local turqoise = { "#5f9f9e", 109, "green" }
 
-local blue = { "#8DA3B9", 109, "darkblue" }
-local cyan = { "#8AA6A2", 109, "cyan" }
-local ice = { "#8AA6A2", 109, "cyan" }
-local teal = { "#8DA3B9", 109, "blue" }
+local blue = { "#517ba5", 109, "darkblue" }
+local cyan = { "#5f9f9e", 109, "cyan" }
+local ice = { "#5f9f9e", 109, "cyan" }
+local teal = { "#517ba5", 109, "blue" }
 
-local magenta = { "#A988B0", 139, "magenta" }
-local magenta_dark = { "#A988B0", 139, "darkmagenta" }
-local pink = { "#A988B0", 139, "magenta" }
-local pink_light = { "#A988B0", 139, "white" }
-local purple = { "#A988B0", 139, "magenta" }
-local purple_light = { "#A988B0", 139, "darkmagenta" }
+local magenta = { "#94628a", 139, "magenta" }
+local magenta_dark = { "#94628a", 139, "darkmagenta" }
+local pink = { "#94628a", 139, "magenta" }
+local pink_light = { "#94628a", 139, "white" }
+local purple = { "#94628a", 139, "magenta" }
+local purple_light = { "#94628a", 139, "darkmagenta" }
 
 --[[ Step 4: highlights
 	You can define highlight groups like this:
@@ -325,7 +325,7 @@ local highlight_groups = {
 
 	--[[ 4.2.3. Conditional Line Highlighting]]
 	Conceal = "NonText",
-	CursorLine = { bg = gray_dark },
+	CursorLine = { bg = red },
 	CursorLineNr = function(self)
 		return { fg = pink, bg = self.LineNr.bg }
 	end,
@@ -426,8 +426,8 @@ local highlight_groups = {
 	LspDiagnosticsUnderlineWarning = "DiagnosticUnderlineWarn",
 
 	--[[ 4.2.12. Cursor ]]
-	-- Cursor = { style = "inverse" },
-	Cursor = { bg = red },
+	Cursor = { style = "inverse" },
+	-- Cursor = { bg = red },
 	CursorIM = "Cursor",
 	CursorColumn = { bg = red },
 
@@ -616,17 +616,17 @@ local highlight_groups = {
 	--[[ 4.3.13. Markdown ]]
 	markdownCode = "mkdCode",
 	markdownCodeDelimiter = "mkdCodeDelimiter",
-	markdownH1 = {  fg = green, style = "bold" },
+	markdownH1 = { fg = green, style = "bold" },
 	markdownH1Delimiter = "markdownH1",
-	markdownH2 = {  fg = orange, style = "bold" },
+	markdownH2 = { fg = orange, style = "bold" },
 	markdownH2Delimiter = "markdownH2",
-	markdownH3 = {  fg = blue, style = "bold" },
+	markdownH3 = { fg = blue, style = "bold" },
 	markdownH3Delimiter = "markdownH3",
-	markdownH4 = {  fg = yellow, style = "bold" },
+	markdownH4 = { fg = yellow, style = "bold" },
 	markdownH4Delimiter = "markdownH4",
-	markdownH5 = {  fg = cyan, style = "bold" },
+	markdownH5 = { fg = cyan, style = "bold" },
 	markdownH5Delimiter = "markdownH5",
-	markdownH6 = {  fg = purple, style = "bold" },
+	markdownH6 = { fg = purple, style = "bold" },
 	markdownH6Delimiter = "markdownH6",
 	markdownLinkDelimiter = "Delimiter",
 	markdownLinkTextDelimiter = "markdownLinkDelimiter",
@@ -647,7 +647,9 @@ local highlight_groups = {
 
 	-- TSTitle = { fg = black, bg = purple, style = "bold" },
 	-- TSTitleDelimiter = { fg = black, bg = purple, style = "bold" },
-	TSPunctSpecial = {fg = green},
+	TSPunctSpecial = function(self)
+		return { fg = self.Ignore.fg }
+	end,
 	--[[ 4.3.20. Python ]]
 	pythonBrackets = "Delimiter",
 	pythonBuiltinFunc = "Operator",
