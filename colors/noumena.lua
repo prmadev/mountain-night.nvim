@@ -646,7 +646,7 @@ local highlight_groups = {
 
 	-- TSTitle = { fg = black, bg = purple, style = "bold" },
 	-- TSTitleDelimiter = { fg = black, bg = purple, style = "bold" },
-	TSPunctSpecial = {fg = "green", style = "regular"},
+	TSPunctSpecial = {fg = "green"},
 	--[[ 4.3.20. Python ]]
 	pythonBrackets = "Delimiter",
 	pythonBuiltinFunc = "Operator",
