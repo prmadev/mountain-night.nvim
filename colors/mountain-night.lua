@@ -56,7 +56,7 @@
 ]]
 
 -- This is the name of your colorscheme which will be used as per |g:colors_name|.
-vim.g.colors_name = "darkmountain"
+vim.g.colors_name = "mountain-night"
 
 --[[ Step 3: Colors
 	Next you will define all of the colors that you will use for the color scheme.
@@ -94,30 +94,30 @@ local white = { "#b4c0d4", 254, "white" }
 local tan = { "#e0ae4a", 180, "yellow" }
 
 local red = { "#973d46", 131, "red" }
-local red_dark = { "#973d46", 131, "darkred" }
-local red_light = { "#973d46", 131, "red" }
+local red_dark = { "#742f37", 131, "darkred" }
+local red_light = { "#b8515b", 131, "red" }
 
 local orange = { "#d39924", 179, "darkyellow" }
-local orange_light = { "#d39924", 179, "darkyellow" }
+local orange_light = { "#d19723", 179, "darkyellow" }
 
 local yellow = { "#e0ae4a", 180, "yellow" }
 
-local green_dark = { "#7ca25c", 101, "darkgreen" }
+local green_dark = { "#638349", 101, "darkgreen" }
 local green = { "#7ca25c", 101, "green" }
-local green_light = { "#7ca25c", 101, "green" }
+local green_light = { "#96b67c", 101, "green" }
 local turqoise = { "#5f9f9e", 109, "green" }
 
-local blue = { "#517ba5", 109, "darkblue" }
-local cyan = { "#5f9f9e", 109, "cyan" }
+local blue = { "#406182", 109, "darkblue" }
+local cyan = { "#4d807f", 109, "cyan" }
 local ice = { "#5f9f9e", 109, "cyan" }
 local teal = { "#517ba5", 109, "blue" }
 
 local magenta = { "#94628a", 139, "magenta" }
-local magenta_dark = { "#94628a", 139, "darkmagenta" }
+local magenta_dark = { "#744e6d", 139, "darkmagenta" }
 local pink = { "#94628a", 139, "magenta" }
 local pink_light = { "#94628a", 139, "white" }
 local purple = { "#94628a", 139, "magenta" }
-local purple_light = { "#94628a", 139, "darkmagenta" }
+local purple_light = { "#a97ea1", 139, "darkmagenta" }
 
 --[[ Step 4: highlights
 	You can define highlight groups like this:
